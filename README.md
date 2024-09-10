@@ -3,7 +3,7 @@
 React、Vite、およびTypeScriptを使用して人口推移グラフを表示します。
 
 Node v20.17+
-npm 10.8+
+Yarn 10.8+
 
 ## インストール
 
