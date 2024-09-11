@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { CheckButton } from "../components/CheckButton";
+import { CheckButton } from "@/components/CheckButton";
+import { CheckBox } from "@/components/CheckBox";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,6 +31,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <CheckButton />
+      <CheckBox prefCode={12} prefName="宮城" />
     </>
   );
 }
