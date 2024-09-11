@@ -36,11 +36,11 @@ async function handleClick(event: Event) {
     switch (name) {
       case "data":
         response = await fetch(
-          `${API_URL}population/sum/perYear?prefCode=11&cityCode=-`
+          `${API_URL}/population/sum/perYear?prefCode=11&cityCode=-`
         );
         break;
       case "pref":
-        response = await fetch(`${API_URL}api/v1/prefectures`);
+        response = await fetch(`${API_URL}/prefectures`);
         break;
     }
     const responseData = await response.json();
