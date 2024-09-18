@@ -14,12 +14,9 @@ export const PrefecturesList = () => {
 
   return (
     <div>
-      <h1>Prefecture List</h1>
-      <div>
-        {prefectures.map((prefecture) => (
-          <CheckBox prefecture={prefecture} key={prefecture.prefCode} />
-        ))}
-      </div>
+      {prefectures.map((prefecture) => (
+        <CheckBox prefecture={prefecture} key={prefecture.prefCode} />
+      ))}
     </div>
   );
 };

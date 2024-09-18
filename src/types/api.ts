@@ -9,7 +9,6 @@ export type PrefectureDataDto = {
 };
 
 export type PopulationData = {
-  label: PopulationType;
   year: number;
   value: number;
   rate?: number;
@@ -17,7 +16,10 @@ export type PopulationData = {
 
 export type PopulationDataDto = {
   boundaryYear: number;
-  data: Array<PopulationData>;
+  data: {
+    label: PopulationType;
+    data: Array<PopulationData>;
+  };
 };
 
 export enum PopulationType {
